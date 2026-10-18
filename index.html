@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Sổ Lớp Signature – Quản lý học sinh, điểm danh, nhận xét, học phí và doanh thu trong một không gian hiện đại."><title>Sổ Lớp Signature · Không gian giáo viên</title>
+<!-- Giao diện sử dụng style.css và script.js cùng thư mục; dữ liệu vẫn được lưu trong localStorage của trình duyệt. -->
+<link rel="stylesheet" href="style.css">
+</head><body><div id="root"></div><noscript>Vui lòng bật JavaScript để sử dụng Sổ Lớp.</noscript>
+
+<div id="tw-modal"><div id="tw-card"><h2>📅 Lịch cố định 2 buổi/tuần</h2><p>Chọn hai ngày học, giờ học và số tuần cần tạo. Các buổi đã tồn tại sẽ không bị tạo trùng.</p><label>Lớp học</label><select id="tw-class"></select><div class="tw-row"><div><label>Buổi 1</label><select id="tw-day1"></select></div><div><label>Buổi 2</label><select id="tw-day2"></select></div></div><div class="tw-row"><div><label>Bắt đầu</label><input id="tw-start" type="time" value="18:00"></div><div><label>Kết thúc</label><input id="tw-end" type="time" value="19:30"></div></div><div class="tw-row"><div><label>Từ ngày</label><input id="tw-from" type="date"></div><div><label>Số tuần</label><input id="tw-weeks" type="number" min="1" max="52" value="12"></div></div><div class="tw-buttons"><button class="subtle" id="tw-cancel">Hủy</button><button class="primary" id="tw-save">Tạo lịch 2 buổi/tuần</button></div></div></div>
+
+<section id="addon-panel" hidden aria-modal="true" role="dialog" aria-label="Chức năng Sổ Lớp bổ sung"><div class="addon-inner"></div></section>
+
+
+
+
+
+<script src="script.js"></script>
+</body></html>
